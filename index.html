@@ -23,7 +23,7 @@
   }
   a{color:var(--accent2); text-decoration:none}
   a:hover{text-decoration:underline}
-  .wrap{max-width:960px; margin:0 auto; padding:0 24px}
+  .wrap{max-width:1080px; margin:0 auto; padding:0 24px}
   section{padding:64px 0; border-bottom:1px solid var(--line)}
   h2{font-size:14px; letter-spacing:2px; text-transform:uppercase; color:var(--accent);
      margin-bottom:28px; font-weight:700}
@@ -41,7 +41,14 @@
   @media(max-width:760px){nav ul{display:none}}
 
   /* HERO */
-  .hero{padding:88px 0 64px; text-align:center}
+  .hero{padding:72px 0 56px}
+  .hero .wrap{display:flex; align-items:center; gap:44px; text-align:left}
+  .hero .avatar{margin:0; flex-shrink:0}
+  .hero .hero-text{flex:1}
+  @media(max-width:640px){
+    .hero .wrap{flex-direction:column; text-align:center}
+    .hero .cta,.hero .socials{justify-content:center}
+  }
   .avatar{width:132px; height:132px; border-radius:50%; margin:0 auto 24px;
     background:linear-gradient(135deg,var(--accent),var(--accent2));
     display:flex; align-items:center; justify-content:center;
@@ -109,6 +116,7 @@
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
       <li><a href="#education">Education</a></li>
       <li><a href="#philosophy">Philosophy</a></li>
       <li><a href="#contact">Contact</a></li>
@@ -119,7 +127,8 @@
 <!-- HERO -->
 <header class="hero">
   <div class="wrap">
-    <img class="avatar" src=NB.png alt="Neha">
+    <img class="avatar" src="NB.png" alt="Neha Bajpayee">
+    <div class="hero-text">
     <h1>Neha Bajpayee</h1>
     <div class="role">Technical Program &amp; Delivery Manager</div>
     <div class="sub">Product &amp; Platform Delivery · AI-Enabled Delivery · Bangalore, India</div>
@@ -131,6 +140,7 @@
       <a href="mailto:bajpayee.neha@gmail.com">Email</a>
       <a href="https://www.linkedin.com/in/neha-bajpayee-1a976a5a/" target="_blank" rel="noopener">LinkedIn</a>
     </div>
+  </div>
   </div>
 </header>
 
@@ -295,6 +305,25 @@
       <ul>
         <li>Began career in hands-on technical delivery — systems implementation, application deployments, and scripting/customizations — driving smooth end-user adoption.</li>
       </ul>
+    </div>
+  </div>
+</section>
+
+  <!-- PROJECTS -->
+<section id="projects">
+  <div class="wrap">
+    <h2>Personal Projects</h2>
+    <div class="two">
+      <div class="card">
+        <h4>SkinMitra — AI Skincare Platform</h4>
+        <div class="meta">Product Concept &amp; Delivery · 2026</div>
+        <p class="muted">SkinMitra is an AI-powered skincare platform that builds personalized routines based on an individual's actual skin health needs — not just aesthetic trends. The AI acts less like a product engine and more like a trusted advisor, balancing data-driven precision with an empathetic approach to skincare. By focusing on genuine skin health outcomes, it aims to make expert-level personalization accessible to everyone, regardless of budget or access to dermatologists.</p>
+      </div>
+      <div class="card">
+        <h4>Kathakriti — AI Content creation & personalisation</h4>
+        <div class="meta">Product Concept · 2026</div>
+        <p class="muted">Kathakriti turns beloved public-domain stories into personalized, AI-animated adaptations — tailored to a child's exact age and tone, generated on demand rather than pulled from a fixed library. Every story is streamed, never downloaded, and creators who fund a title's first generation earn ongoing credit as it's watched and loved by others. It's storytelling reimagined at the intersection of classic literature and generative AI — timeless narratives, made new for every child.</p>
+      </div>
     </div>
   </div>
 </section>
