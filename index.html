@@ -1,419 +1,1009 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Neha Bajpayee — Technical Program &amp; Delivery Manager</title>
-<meta name="author" content="Neha Bajpayee" />
-<meta name="description" content="Technical Program / Delivery Manager with 17+ years across the full delivery lifecycle. AI-enabled delivery, Agile/SAFe, healthcare &amp; enterprise platforms. Based in Bangalore." />
-<meta property="og:title" content="Neha Bajpayee — Technical Program &amp; Delivery Manager" />
-<meta property="og:description" content="17+ years in program &amp; delivery leadership. Greenfield 0-to-1, AI-enabled delivery, Agile/SAFe. Bangalore, India." />
-<meta property="og:type" content="profile" />
+  <meta charset="utf-8">
+  <title>Neha Bajpayee — Technical Program &amp; Delivery Manager</title>
+  <meta name="description" content="Technical Program & Delivery Manager with 17+ years across program delivery, product execution, Agile/SAFe, healthcare and enterprise platforms. Based in Bangalore, India.">
+  <meta name="author" content="Neha Bajpayee">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Neha Bajpayee — Technical Program &amp; Delivery Manager">
+  <meta property="og:description" content="17+ years in program and delivery leadership, AI-enabled delivery, Agile/SAFe, greenfield 0-to-1 and enterprise platforms.">
+  <meta property="og:image" content="https://bajpayeeneha.github.io/NB.png">
+  <meta property="og:url" content="https://bajpayeeneha.github.io/">
+  <link rel="canonical" href="https://bajpayeeneha.github.io/">
+  <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
 <style>
-  :root{
-    --bg:#0f1419; --panel:#161c24; --panel2:#1c242e;
-    --ink:#e8edf2; --muted:#9aa7b4; --line:#2a333f;
-    --accent:#3b82f6; --accent2:#22d3ee; --chip:#1f2a36;
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  html{scroll-behavior:smooth}
-  body{
-    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-    background:var(--bg); color:var(--ink); line-height:1.6; font-size:16px;
-  }
-  a{color:var(--accent2); text-decoration:none}
-  a:hover{text-decoration:underline}
-  .wrap{max-width:1080px; margin:0 auto; padding:0 24px}
-  section{padding:52px 0; border-bottom:1px solid var(--line)}
-  h2{font-size:14px; letter-spacing:2px; text-transform:uppercase; color:var(--accent);
-     margin-bottom:28px; font-weight:700}
-  h3{font-size:19px; margin-bottom:4px}
-  .muted{color:var(--muted)}
+    /* ── Reset ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      background: #080c14;
+      background-image:
+        radial-gradient(ellipse 900px 700px at 15% 5%,  rgba(79,142,247,0.07) 0%, transparent 60%),
+        radial-gradient(ellipse 700px 500px at 85% 90%, rgba(6,182,212,0.05)  0%, transparent 55%);
+      background-attachment: fixed;
+      color: #c8d4e8;
+      display: flex;
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+    a { color: inherit; text-decoration: none; }
+    ul { list-style: none; }
 
-  /* NAV */
-  nav{position:sticky; top:0; z-index:20; background:rgba(15,20,25,.9);
-      backdrop-filter:blur(8px); border-bottom:1px solid var(--line)}
-  nav .wrap{display:flex; align-items:center; justify-content:space-between; height:60px}
-  nav .brand{font-weight:700; letter-spacing:.5px}
-  nav ul{display:flex; gap:22px; list-style:none}
-  nav ul a{color:var(--muted); font-size:14px}
-  nav ul a:hover{color:var(--ink); text-decoration:none}
-  @media(max-width:760px){nav ul{display:none}}
+    /* ── Utility ── */
+    .grad-text {
+      background: linear-gradient(120deg, #4f8ef7 0%, #06b6d4 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .glass {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 12px;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .glass:hover {
+      border-color: rgba(79,142,247,0.3);
+      box-shadow: 0 4px 32px rgba(79,142,247,0.08);
+    }
 
-  /* HERO */
-  .hero{padding:72px 0 56px}
-  .hero .wrap{display:flex; align-items:center; gap:44px; text-align:left}
-  .hero .avatar{margin:0; flex-shrink:0}
-  .hero .hero-text{flex:1}
-  @media(max-width:640px){
-    .hero .wrap{flex-direction:column; text-align:center}
-    .hero .cta,.hero .socials{justify-content:center}
-  }
-  .avatar{width:132px; height:132px; border-radius:50%; margin:0 auto 24px;
-    background:linear-gradient(135deg,var(--accent),var(--accent2));
-    display:flex; align-items:center; justify-content:center;
-    font-size:46px; font-weight:700; color:#fff; border:3px solid var(--panel2)}
-  .hero h1{font-size:40px; letter-spacing:.5px}
-  .hero .role{color:var(--accent2); font-size:20px; margin:6px 0 4px; font-weight:600}
-  .hero .sub{color:var(--muted)}
-  .hero .cta{margin-top:28px; display:flex; gap:14px; justify-content:center; flex-wrap:wrap}
-  .btn{padding:11px 22px; border-radius:8px; font-weight:600; font-size:15px; border:1px solid var(--line)}
-  .btn.primary{background:var(--accent); color:#fff; border-color:var(--accent)}
-  .btn.primary:hover{opacity:.9; text-decoration:none}
-  .btn.ghost{color:var(--ink)}
-  .btn.ghost:hover{border-color:var(--accent); text-decoration:none}
-  .socials{margin-top:22px; display:flex; gap:18px; justify-content:center}
-  .socials a{color:var(--muted); font-size:14px}
+    /* ═══════════════════════════════════════
+       SIDEBAR
+    ═══════════════════════════════════════ */
+    .sidebar {
+      width: 288px;
+      min-height: 100vh;
+      background: #0b1020;
+      border-right: 1px solid rgba(255,255,255,0.05);
+      position: fixed;
+      top: 0; left: 0;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      z-index: 100;
+      scrollbar-width: thin;
+      scrollbar-color: #1a2236 transparent;
+    }
+    .sidebar::-webkit-scrollbar { width: 3px; }
+    .sidebar::-webkit-scrollbar-thumb { background: #1a2236; }
 
-  /* STATS */
-  .stats{display:grid; grid-template-columns:repeat(4,1fr); gap:18px; margin-top:36px}
-  .stat{background:var(--panel); border:1px solid var(--line); border-radius:10px; padding:20px; text-align:center}
-  .stat .n{font-size:28px; font-weight:700; color:var(--accent2)}
-  .stat .l{font-size:12.5px; color:var(--muted); margin-top:4px}
-  @media(max-width:640px){.stats{grid-template-columns:repeat(2,1fr)}}
+    .sidebar-inner {
+      padding: 2.25rem 1.6rem 2.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      flex: 1;
+    }
 
-  /* SKILLS */
-  .skillgrid{display:grid; grid-template-columns:repeat(3,1fr); gap:20px}
-  @media(max-width:760px){.skillgrid{grid-template-columns:1fr}}
-  .skillcard{background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:22px}
-  .skillcard h4{font-size:15px; margin-bottom:14px; color:var(--ink)}
-  .chips{display:flex; flex-wrap:wrap; gap:8px}
-  .chip{background:var(--chip); border:1px solid var(--line); color:var(--muted);
-    padding:6px 12px; border-radius:20px; font-size:13px}
+    /* Profile */
+    .profile { text-align: center; }
+    .profile-photo-wrap {
+      display: inline-block;
+      padding: 3px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #4f8ef7, #06b6d4);
+      box-shadow: 0 0 28px rgba(79,142,247,0.45), 0 0 56px rgba(6,182,212,0.15);
+      margin-bottom: 1.1rem;
+    }
+    .profile-photo {
+      width: 92px; height: 92px;
+      border-radius: 50%;
+      border: 3px solid #0b1020;
+      object-fit: cover;
+      display: block;
+    }
+    .profile-name {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #eaf0ff;
+      letter-spacing: 0.01em;
+      margin-bottom: 0.35rem;
+    }
+    .profile-role {
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      line-height: 1.6;
+    }
+    .profile-tagline {
+      font-size: 0.72rem;
+      color: #4a5a78;
+      margin-top: 0.4rem;
+    }
 
-  /* TIMELINE */
-  .job{background:var(--panel); border:1px solid var(--line); border-radius:12px;
-    padding:24px; margin-bottom:18px}
-  .job .top{display:flex; justify-content:space-between; flex-wrap:wrap; gap:6px; margin-bottom:4px}
-  .job .co{color:var(--accent2); font-weight:600}
-  .job .when{color:var(--muted); font-size:14px}
-  .job ul{margin:14px 0 0 18px; color:var(--muted)}
-  .job ul li{margin-bottom:8px}
-  .jobgrid
-  {
-    display:grid; grid-template-columns:1fr 1fr; gap:18px}
-    .jobgrid .job{margin-bottom:0}   @media(max-width:760px)
-      {
-        .jobgrid{grid-template-columns:1fr
-      }
-  }
+    /* Divider */
+    .s-div {
+      border: none;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(79,142,247,0.2), transparent);
+    }
 
-  /* EDU / ACHV */
-  .two{display:grid; grid-template-columns:1fr 1fr; gap:18px}   
-  .three{display:grid; grid-template-columns:repeat(3,1fr); gap:18px}   
-  @media(max-width:760px){.three{grid-template-columns:1fr}}
-  @media(max-width:760px){.two{grid-template-columns:1fr}}
-  .card{background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:22px}
-  .card h4{font-size:16px; margin-bottom:4px}
-  .card .meta{color:var(--muted); font-size:14px; margin-bottom:8px}
+    /* Nav */
+    .sidebar-nav { display: flex; flex-direction: column; gap: 0.15rem; }
+    .sidebar-nav a {
+      display: flex; align-items: center; gap: 0.65rem;
+      padding: 0.48rem 0.75rem;
+      border-radius: 7px;
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: #4a5a78;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      border-left: 2px solid transparent;
+      transition: all 0.18s;
+    }
+    .sidebar-nav a i { width: 13px; font-size: 0.75rem; color: #4f8ef7; }
+    .sidebar-nav a:hover, .sidebar-nav a.active {
+      background: rgba(79,142,247,0.08);
+      color: #c8d4e8;
+      border-left-color: #4f8ef7;
+      box-shadow: inset 4px 0 16px rgba(79,142,247,0.06);
+    }
 
-  .phil{display:grid; grid-template-columns:1fr 1fr; gap:18px}
-  @media(max-width:760px){.phil{grid-template-columns:1fr}}
-  .phil ul{list-style:none}
-  .phil li{padding:8px 0 8px 22px; position:relative; color:var(--muted)}
-  .phil li::before{content:"▹"; position:absolute; left:0; color:var(--accent)}
+    /* Contact list */
+    .contact-list { display: flex; flex-direction: column; gap: 0.6rem; }
+    .contact-item {
+      display: flex; align-items: flex-start; gap: 0.6rem;
+      font-size: 0.73rem; color: #4a5a78;
+    }
+    .contact-item i { color: #4f8ef7; margin-top: 2px; flex-shrink: 0; width: 13px; }
+    .contact-item a { color: #4a5a78; transition: color 0.15s; }
+    .contact-item a:hover { color: #4f8ef7; }
 
-  footer{padding:40px 0; text-align:center; color:var(--muted); font-size:14px}
-  .center{text-align:center}
-</style>
+    /* Social */
+    .social-row { display: flex; gap: 0.55rem; justify-content: center; flex-wrap: wrap; }
+    .social-row a {
+      width: 32px; height: 32px;
+      border-radius: 8px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.07);
+      display: flex; align-items: center; justify-content: center;
+      color: #4a5a78; font-size: 0.8rem;
+      transition: all 0.18s;
+    }
+    .social-row a:hover {
+      background: rgba(79,142,247,0.15);
+      border-color: rgba(79,142,247,0.4);
+      color: #4f8ef7;
+      box-shadow: 0 0 12px rgba(79,142,247,0.25);
+    }
+
+    /* Skill tags */
+    .skills-block { display: flex; flex-direction: column; gap: 1rem; }
+    .skill-group-label {
+      font-size: 0.62rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: #4f8ef7;
+      font-weight: 700;
+      margin-bottom: 0.4rem;
+    }
+    .tag-cloud { display: flex; flex-wrap: wrap; gap: 0.3rem; }
+    .tag {
+      font-size: 0.64rem;
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      font-weight: 500;
+      line-height: 1.5;
+      transition: all 0.15s;
+      cursor: default;
+    }
+    .tag-lead {
+      background: rgba(79,142,247,0.12);
+      border: 1px solid rgba(79,142,247,0.35);
+      color: #93c5fd;
+    }
+    .tag-lead:hover { background: rgba(79,142,247,0.2); box-shadow: 0 0 8px rgba(79,142,247,0.25); }
+    .tag-tech {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.12);
+      color: #8899bb;
+    }
+    .tag-tech:hover { border-color: rgba(6,182,212,0.35); color: #67e8f9; }
+
+    /* CTA */
+    .sidebar-cta {
+      display: flex; align-items: center; justify-content: center; gap: 0.5rem;
+      background: linear-gradient(120deg, #2563eb, #0891b2);
+      color: #fff;
+      padding: 0.65rem;
+      border-radius: 8px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      transition: opacity 0.18s, box-shadow 0.18s;
+      box-shadow: 0 4px 20px rgba(37,99,235,0.35);
+    }
+    .sidebar-cta:hover {
+      opacity: 0.9;
+      box-shadow: 0 4px 28px rgba(37,99,235,0.55);
+      color: #fff;
+    }
+    .sidebar-cta-outline {
+      display: flex; align-items: center; justify-content: center; gap: 0.5rem;
+      border: 1px solid rgba(79,142,247,0.7);
+      background: rgba(79,142,247,0.1);
+      color: #a8c8ff;
+      padding: 0.65rem;
+      border-radius: 8px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      transition: border-color 0.18s, color 0.18s, background 0.18s;
+    }
+    .sidebar-cta-outline:hover {
+      border-color: #7ab3ff;
+      background: rgba(79,142,247,0.2);
+      color: #fff;
+    }
+
+    /* ═══════════════════════════════════════
+       MAIN CONTENT
+    ═══════════════════════════════════════ */
+    .main-content {
+      margin-left: 288px;
+      flex: 1;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Section */
+    .section {
+      padding: 3rem 3.5rem;
+      position: relative;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+    }
+    .section::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 3.5rem; right: 3.5rem;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(79,142,247,0.15), transparent);
+    }
+    .section:first-child::before { display: none; }
+
+    .section-header {
+      display: flex; align-items: center; gap: 0.85rem;
+      margin-bottom: 2.25rem;
+    }
+    .section-icon {
+      width: 34px; height: 34px;
+      background: rgba(79,142,247,0.1);
+      border: 1px solid rgba(79,142,247,0.2);
+      border-radius: 9px;
+      display: flex; align-items: center; justify-content: center;
+      color: #4f8ef7; font-size: 0.85rem;
+      flex-shrink: 0;
+      box-shadow: 0 0 12px rgba(79,142,247,0.15);
+    }
+    .section-title {
+      font-size: 0.68rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+    }
+
+    /* ── Skills (main) ── */
+    .skills-main-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 1.5rem;
+    }
+    .skill-group {
+      background: rgba(255,255,255,0.02);
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 12px;
+      padding: 1.5rem;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .skill-group:hover {
+      border-color: rgba(79,142,247,0.25);
+      box-shadow: 0 4px 24px rgba(79,142,247,0.07);
+    }
+    .skill-group-title {
+      font-size: 0.68rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      margin-bottom: 1rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      display: flex; align-items: center; gap: 0.5rem;
+    }
+    .skill-group-title i { font-size: 0.75rem; }
+    .skill-list { display: flex; flex-direction: column; gap: 0.4rem; }
+    .skill-item {
+      display: flex; align-items: center; gap: 0.6rem;
+      font-size: 0.85rem; color: #8899bb;
+      padding: 0.3rem 0;
+    }
+    .skill-item i { color: #4f8ef7; width: 14px; font-size: 0.75rem; flex-shrink: 0; }
+    .skill-tags-inline { display: flex; flex-wrap: wrap; gap: 0.35rem; }
+
+    /* ── About ── */
+    .about-intro {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      margin-bottom: 2rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .about-photo-wrap {
+      flex-shrink: 0;
+      padding: 3px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #4f8ef7, #06b6d4);
+      box-shadow: 0 0 28px rgba(79,142,247,0.4), 0 0 56px rgba(6,182,212,0.12);
+    }
+    .about-photo {
+      width: 88px; height: 88px;
+      border-radius: 50%;
+      border: 3px solid #080c14;
+      object-fit: cover;
+      display: block;
+    }
+    .about-identity { flex: 1; }
+    .about-name {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: #eaf0ff;
+      line-height: 1.2;
+      margin-bottom: 0.3rem;
+    }
+    .about-role {
+      font-size: 0.82rem;
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+    }
+    .about-meta {
+      font-size: 0.75rem;
+      color: #4a5a78;
+      display: flex; gap: 1.25rem; flex-wrap: wrap;
+    }
+    .about-meta span { display: flex; align-items: center; gap: 0.35rem; }
+    .about-meta i { color: #4f8ef7; }
+    .about-lead {
+      font-size: 1.05rem;
+      font-weight: 600;
+      line-height: 1.65;
+      color: #c8d4e8;
+      margin-bottom: 0.85rem;
+    }
+    .about-body {
+      font-size: 0.88rem;
+      line-height: 1.9;
+      color: #6a7d9e;
+    }
+    .stat-row {
+      display: flex; gap: 1rem;
+      margin-top: 2.25rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      flex-wrap: wrap;
+    }
+    .stat-card {
+      flex: 1; min-width: 100px;
+      padding: 1.25rem 0.75rem;
+      border-radius: 12px;
+      background: rgba(255,255,255,0.02);
+      border: 1px solid rgba(255,255,255,0.06);
+      text-align: center;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .stat-card:hover {
+      border-color: rgba(79,142,247,0.3);
+      box-shadow: 0 0 20px rgba(79,142,247,0.08);
+    }
+    .stat-val {
+      font-size: 2rem;
+      font-weight: 800;
+      line-height: 1;
+      display: block;
+    }
+    .stat-lbl {
+      font-size: 0.6rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #4a5a78;
+      margin-top: 0.4rem;
+      display: block;
+    }
+
+    /* ── Timeline ── */
+    .timeline { display: flex; flex-direction: column; }
+    .tl-item {
+      display: flex; gap: 1.5rem;
+      padding-bottom: 2.75rem;
+    }
+    .tl-item:last-child { padding-bottom: 0; }
+    .tl-left {
+      display: flex; flex-direction: column; align-items: center;
+      flex-shrink: 0; width: 18px;
+    }
+    .tl-dot {
+      width: 12px; height: 12px;
+      border-radius: 50%;
+      background: #4f8ef7;
+      box-shadow: 0 0 8px rgba(79,142,247,0.9), 0 0 20px rgba(79,142,247,0.4);
+      flex-shrink: 0;
+      margin-top: 5px;
+    }
+    .tl-line {
+      width: 1px; flex: 1;
+      background: linear-gradient(180deg, rgba(79,142,247,0.4) 0%, rgba(79,142,247,0.05) 100%);
+      margin-top: 6px;
+    }
+    .tl-item:last-child .tl-line { display: none; }
+    .tl-body { flex: 1; padding-top: 1px; }
+    .tl-company {
+      font-size: 1rem; font-weight: 700; color: #eaf0ff;
+    }
+    .tl-company a { color: #eaf0ff; transition: color 0.15s; }
+    .tl-company a:hover { color: #4f8ef7; }
+    .tl-role {
+      font-size: 0.8rem; font-weight: 600;
+      margin-top: 0.15rem;
+    }
+    .tl-meta {
+      display: flex; gap: 1.25rem; flex-wrap: wrap;
+      font-size: 0.7rem; color: #2e3f5c;
+      margin-top: 0.3rem;
+    }
+    .tl-meta span { display: flex; align-items: center; gap: 0.3rem; }
+    .tl-context {
+      margin-top: 0.55rem;
+      font-size: 0.72rem;
+      color: #4a5a78;
+      font-style: italic;
+    }
+    .tl-bullets {
+      margin-top: 0.9rem;
+      padding-left: 1rem;
+      list-style: none;
+      display: flex; flex-direction: column; gap: 0.5rem;
+    }
+    .tl-bullets li {
+      font-size: 0.86rem; color: #5a6e90; line-height: 1.65;
+      padding-left: 1rem;
+      position: relative;
+    }
+    .tl-bullets li::before {
+      content: '';
+      position: absolute; left: 0; top: 0.6em;
+      width: 4px; height: 4px;
+      border-radius: 50%;
+      background: #4f8ef7;
+      box-shadow: 0 0 6px rgba(79,142,247,0.7);
+    }
+
+    /* ── Grid ── */
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+    }
+    .pub-stack { display: flex; flex-direction: column; gap: 1rem; }
+
+    /* Info cards */
+    .info-card {
+      background: rgba(255,255,255,0.02);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 12px;
+      padding: 1.35rem;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .info-card:hover {
+      border-color: rgba(79,142,247,0.25);
+      box-shadow: 0 4px 24px rgba(79,142,247,0.07);
+    }
+    .info-card-title {
+      font-size: 0.9rem; font-weight: 700; color: #c8d4e8;
+      margin-bottom: 0.2rem;
+    }
+    .info-card-title a { color: #c8d4e8; transition: color 0.15s; }
+    .info-card-title a:hover { color: #4f8ef7; }
+    .info-card-sub {
+      font-size: 0.72rem; font-weight: 600;
+      margin-bottom: 0.3rem;
+    }
+    .info-card-meta { font-size: 0.7rem; color: #2e3f5c; }
+    .info-card-body { font-size: 0.78rem; color: #4a5a78; margin-top: 0.5rem; line-height: 1.6; }
+
+    /* Achievements */
+    .ach-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+      gap: 1rem;
+    }
+    .ach-card {
+      background: rgba(255,255,255,0.02);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 12px;
+      padding: 1.2rem;
+      display: flex; gap: 0.8rem; align-items: flex-start;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .ach-card:hover {
+      border-color: rgba(250,204,21,0.25);
+      box-shadow: 0 4px 24px rgba(250,204,21,0.05);
+    }
+    .ach-icon {
+      width: 34px; height: 34px;
+      border-radius: 8px;
+      background: rgba(250,204,21,0.08);
+      border: 1px solid rgba(250,204,21,0.18);
+      display: flex; align-items: center; justify-content: center;
+      color: #fbbf24; font-size: 0.82rem;
+      flex-shrink: 0;
+    }
+    .ach-text { font-size: 0.79rem; color: #4a5a78; line-height: 1.55; display: flex; flex-direction: column; }
+    .ach-text strong { color: #c8d4e8; display: block; margin-bottom: 0.5rem; font-size: 0.82rem; min-height: 2.4rem; }
+
+    /* More */
+    .more-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.1rem;
+    }
+    .more-card {
+      background: rgba(255,255,255,0.02);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 12px;
+      padding: 1.35rem;
+    }
+    .more-card-title {
+      font-size: 0.65rem; font-weight: 800;
+      text-transform: uppercase; letter-spacing: 0.14em;
+      margin-bottom: 0.85rem;
+      display: flex; align-items: center; gap: 0.4rem;
+    }
+    .more-list { display: flex; flex-direction: column; gap: 0.3rem; }
+    .more-list li { font-size: 0.82rem; color: #4a5a78; }
+
+    /* Contact */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+    }
+    .cf-wrap { display: flex; flex-direction: column; gap: 0.75rem; }
+    .form-field input, .form-field textarea {
+      width: 100%;
+      padding: 0.72rem 1rem;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 8px;
+      font-size: 0.86rem;
+      color: #c8d4e8;
+      outline: none;
+      transition: border-color 0.18s, box-shadow 0.18s;
+      font-family: inherit;
+    }
+    .form-field input::placeholder, .form-field textarea::placeholder { color: #2e3f5c; }
+    .form-field input:focus, .form-field textarea:focus {
+      border-color: rgba(79,142,247,0.5);
+      box-shadow: 0 0 0 3px rgba(79,142,247,0.1);
+    }
+    .form-field textarea { min-height: 130px; resize: vertical; }
+    .btn-submit {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      background: linear-gradient(120deg, #2563eb, #0891b2);
+      color: #fff; border: none;
+      padding: 0.72rem 1.75rem;
+      border-radius: 8px;
+      font-size: 0.84rem; font-weight: 700;
+      cursor: pointer;
+      transition: opacity 0.18s, box-shadow 0.18s;
+      font-family: inherit;
+      box-shadow: 0 4px 18px rgba(37,99,235,0.4);
+    }
+    .btn-submit:hover { opacity: 0.9; box-shadow: 0 4px 28px rgba(37,99,235,0.6); }
+    #message-warning, #message-success {
+      display: none; font-size: 0.84rem;
+      padding: 0.75rem 1rem; border-radius: 8px; margin-top: 0.25rem;
+    }
+    #message-success { background: rgba(16,185,129,0.1); color: #34d399; border: 1px solid rgba(52,211,153,0.2); }
+    #message-warning { background: rgba(239,68,68,0.1);  color: #f87171; border: 1px solid rgba(248,113,113,0.2); }
+
+    .ci-wrap { display: flex; flex-direction: column; gap: 1.25rem; }
+    .ci-item { display: flex; gap: 1rem; align-items: flex-start; }
+    .ci-icon {
+      width: 38px; height: 38px;
+      background: rgba(79,142,247,0.08);
+      border: 1px solid rgba(79,142,247,0.18);
+      border-radius: 9px;
+      display: flex; align-items: center; justify-content: center;
+      color: #4f8ef7; font-size: 0.88rem; flex-shrink: 0;
+    }
+    .ci-label { font-size: 0.62rem; text-transform: uppercase; letter-spacing: 0.1em; color: #2e3f5c; margin-bottom: 0.2rem; }
+    .ci-value { font-size: 0.87rem; color: #c8d4e8; font-weight: 500; }
+    .ci-value a { color: #c8d4e8; transition: color 0.15s; }
+    .ci-value a:hover { color: #4f8ef7; }
+
+    /* Footer */
+    .site-footer {
+      background: #070b12;
+      border-top: 1px solid rgba(255,255,255,0.04);
+      padding: 1.25rem 3.5rem;
+      display: flex; justify-content: space-between; align-items: center;
+      margin-top: auto;
+    }
+    .footer-copy { font-size: 0.7rem; color: #2e3f5c; }
+    .footer-social { display: flex; gap: 0.5rem; }
+    .footer-social a {
+      width: 29px; height: 29px;
+      border-radius: 7px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.06);
+      display: flex; align-items: center; justify-content: center;
+      color: #2e3f5c; font-size: 0.75rem;
+      transition: all 0.18s;
+    }
+    .footer-social a:hover {
+      background: rgba(79,142,247,0.12);
+      border-color: rgba(79,142,247,0.3);
+      color: #4f8ef7;
+      box-shadow: 0 0 10px rgba(79,142,247,0.2);
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 1024px) {
+      .sidebar { width: 260px; }
+      .main-content { margin-left: 260px; }
+      .section { padding: 2.5rem 2rem; }
+      .section::before { left: 2rem; right: 2rem; }
+      .site-footer { padding: 1.25rem 2rem; }
+    }
+    @media (max-width: 768px) {
+      body { flex-direction: column; }
+      .sidebar { width: 100%; position: relative; min-height: auto; }
+      .main-content { margin-left: 0; }
+      .two-col, .more-grid, .contact-grid, .skills-main-grid { grid-template-columns: 1fr; }
+      .section { padding: 2rem 1.25rem; }
+      .section::before { left: 1.25rem; right: 1.25rem; }
+      .site-footer { padding: 1rem 1.25rem; flex-direction: column; gap: 0.75rem; }
+      .stat-row { gap: 0.75rem; }
+    }
+    @media (max-width: 480px) {
+      .ach-grid { grid-template-columns: 1fr; }
+      .stat-card { min-width: 80px; }
+    }
+  </style>
 </head>
-<body>
+<body id="top">
 
-<nav>
-  <div class="wrap">
-    <span class="brand">Neha Bajpayee</span>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#philosophy">Philosophy</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </div>
-</nav>
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+      <div class="profile">
+        <div class="profile-photo-wrap">
+          <img src="NB.png" alt="Neha Bajpayee" class="profile-photo">
+        </div>
+        <div class="profile-name">Neha Bajpayee</div>
+        <div class="profile-role grad-text">Technical Program &amp; Delivery Manager</div>
+        <div class="profile-tagline">Product &amp; Platform Delivery &middot; Bangalore, India</div>
+      </div>
 
-<!-- HERO -->
-<header class="hero">
-  <div class="wrap">
-    <img class="avatar" src="NB.png" alt="Neha Bajpayee">
-    <div class="hero-text">
-    <h1>Neha Bajpayee</h1>
-    <div class="role">Technical Program &amp; Delivery Manager</div>
-    <div class="sub">Product &amp; Platform Delivery · AI-Enabled Delivery · Bangalore, India</div>
-    <div class="cta">
-      <a class="btn primary" href="https://www.linkedin.com/in/neha-bajpayee-1a976a5a/" target="_blank" rel="noopener">Connect on LinkedIn</a>
-      <a class="btn ghost" href="NBajpayee.pdf" target="_blank" rel="noopener">Download CV</a>
-    </div>
-    <div class="socials">
-      <a href="mailto:bajpayee.neha@gmail.com">Email</a>
-      <a href="https://www.linkedin.com/in/neha-bajpayee-1a976a5a/" target="_blank" rel="noopener">LinkedIn</a>
-    </div>
-  </div>
-  </div>
-</header>
+      <hr class="s-div">
 
-<!-- ABOUT -->
-<section id="about">
-  <div class="wrap">
-    <h2>About</h2>
-    <p class="muted" style="margin-bottom:14px">Bangalore, India&nbsp; ·&nbsp; StatusNeo (most recent)&nbsp; ·&nbsp; 17+ Years Experience</p>
-    <p style="margin-bottom:14px">A technical program and delivery leader who turns ambitious roadmaps into shipped, operating products — and builds the governance, cadence, and AI-enabled ways of working that keep delivery predictable at scale.</p>
-    <p class="muted">17+ years across the full delivery lifecycle — from a hands-on technical start and QA leadership into end-to-end Agile program and delivery management. Proven in greenfield, build-from-scratch initiatives (concept to MVP), enterprise delivery, and solution-level coordination across engineering, product, design, and QA. Recent focus: integrating generative AI and automation into delivery to cut manual effort, sharpen risk visibility, and accelerate time-to-market.</p>
+      <nav class="sidebar-nav">
+        <a href="#about"><i class="fa fa-user"></i> About</a>
+        <a href="#skills"><i class="fa fa-cogs"></i> Skills</a>
+        <a href="#experience"><i class="fa fa-briefcase"></i> Experience</a>
+        <a href="#projects"><i class="fa fa-lightbulb-o"></i> Projects</a>
+        <a href="#education"><i class="fa fa-graduation-cap"></i> Education</a>
+        <a href="#more"><i class="fa fa-compass"></i> Philosophy</a>
+        <a href="#contact"><i class="fa fa-envelope"></i> Contact</a>
+      </nav>
 
-    <div class="stats">
-      <div class="stat"><div class="n">17+</div><div class="l">Years Experience</div></div>
-      <div class="stat"><div class="n">30+</div><div class="l">Teams Orchestrated</div></div>
-      <div class="stat"><div class="n">8</div><div class="l">Platforms 0→MVP</div></div>
-      <div class="stat"><div class="n">4+</div><div class="l">Product Lines</div></div>
-    </div>
-  </div>
-</section>
+      <hr class="s-div">
 
-<!-- SKILLS -->
-<section id="skills">
-  <div class="wrap">
-    <h2>Skills</h2>
-    <div class="skillgrid">
-      <div class="skillcard">
-        <h4>Program &amp; Delivery Leadership</h4>
-        <div class="chips">
-          <span class="chip">Program Management</span>
-          <span class="chip">End-to-End Agile Delivery</span>
-          <span class="chip">Release Management</span>
-          <span class="chip">Roadmap Execution</span>
-          <span class="chip">Greenfield / 0→1</span>
-          <span class="chip">MVP Strategy</span>
-          <span class="chip">Resource &amp; Capacity Planning</span>
-          <span class="chip">Stakeholder Alignment</span>
+      <div class="contact-list">
+        <div class="contact-item">
+          <i class="fa fa-envelope"></i>
+          <a href="mailto:bajpayee.neha@gmail.com">bajpayee.neha@gmail.com</a>
+        </div>
+        <div class="contact-item">
+          <i class="fa fa-map-marker"></i>
+          <span>Bangalore, India</span>
         </div>
       </div>
-      <div class="skillcard">
-        <h4>Agile &amp; Governance</h4>
-        <div class="chips">
-          <span class="chip">SAFe</span>
-          <span class="chip">Scrum</span>
-          <span class="chip">Sprint Planning</span>
-          <span class="chip">Executive Scorecards</span>
-          <span class="chip">KPI Dashboards</span>
-          <span class="chip">Predictive Risk Analysis</span>
-          <span class="chip">Data-Driven Governance</span>
-          <span class="chip">SDLC Governance</span>
+
+      <hr class="s-div">
+
+      <div class="social-row">
+        <a href="https://www.linkedin.com/in/neha-bajpayee-1a976a5a/" target="_blank" rel="noopener noreferrer" title="LinkedIn" aria-label="LinkedIn profile"><i class="fa fa-linkedin"></i></a>
+      </div>
+
+      <div style="display:flex; flex-direction:column; gap:0.5rem;">
+        <a href="https://www.linkedin.com/in/neha-bajpayee-1a976a5a/" target="_blank" rel="noopener noreferrer" class="sidebar-cta">
+          <i class="fa fa-linkedin"></i> Connect on LinkedIn
+        </a>
+        <a href="NBajpayee.pdf" target="_blank" rel="noopener noreferrer" class="sidebar-cta-outline">
+          <i class="fa fa-download"></i> Download CV
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <main class="main-content">
+
+    <section class="section" id="about">
+      <div class="section-header">
+        <div class="section-icon"><i class="fa fa-user"></i></div>
+        <span class="section-title grad-text">About</span>
+      </div>
+      <div class="about-meta" style="display:flex; gap:1.5rem; flex-wrap:wrap; margin-bottom:1.5rem;">
+        <span><i class="fa fa-map-marker" style="color:#4f8ef7;margin-right:0.4rem;"></i> Bangalore, India</span>
+        <span><i class="fa fa-building" style="color:#4f8ef7;margin-right:0.4rem;"></i> StatusNeo</span>
+        <span><i class="fa fa-briefcase" style="color:#4f8ef7;margin-right:0.4rem;"></i> 17+ Years Experience</span>
+      </div>
+      <p class="about-lead">A technical program and delivery leader who turns <span class="grad-text">ambitious roadmaps into shipped, operating products</span> — with the governance, cadence and AI-enabled ways of working that keep delivery predictable at scale.</p>
+      <p class="about-body">17+ years across the full delivery lifecycle — from a hands-on technical start and QA leadership into end-to-end Agile program and delivery management. Proven in greenfield, build-from-scratch initiatives, concept-to-MVP delivery, enterprise programs, and solution-level coordination across engineering, product, design and QA.</p>
+      <p class="about-body" style="margin-top:0.75rem; font-style:italic; color:#6a7d9e;"><i class="fa fa-bolt" style="color:#4f8ef7; margin-right:0.4rem;"></i>Currently focused on: integrating generative AI and automation into delivery to cut manual effort, sharpen risk visibility and accelerate time-to-market.</p>
+      <div class="stat-row">
+        <div class="stat-card"><span class="stat-val grad-text">17<span style="font-size:1.2rem">+</span></span><span class="stat-lbl">Years Experience</span></div>
+        <div class="stat-card"><span class="stat-val grad-text">30<span style="font-size:1.2rem">+</span></span><span class="stat-lbl">Teams Orchestrated</span></div>
+        <div class="stat-card"><span class="stat-val grad-text">8</span><span class="stat-lbl">Platforms 0→MVP</span></div>
+        <div class="stat-card"><span class="stat-val grad-text">4<span style="font-size:1.2rem">+</span></span><span class="stat-lbl">Product Lines</span></div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="section-header">
+        <div class="section-icon"><i class="fa fa-cogs"></i></div>
+        <span class="section-title grad-text">Skills</span>
+      </div>
+      <div class="skills-main-grid">
+        <div class="skill-group">
+          <div class="skill-group-title grad-text"><i class="fa fa-users"></i> Program &amp; Delivery</div>
+          <div class="skill-list">
+            <div class="skill-item"><i class="fa fa-sitemap"></i> Program Management</div>
+            <div class="skill-item"><i class="fa fa-line-chart"></i> End-to-End Agile Delivery</div>
+            <div class="skill-item"><i class="fa fa-rocket"></i> Release &amp; Roadmap Execution</div>
+            <div class="skill-item"><i class="fa fa-compass"></i> Greenfield / 0→1 &amp; MVP Strategy</div>
+            <div class="skill-item"><i class="fa fa-users"></i> Resource &amp; Capacity Planning</div>
+            <div class="skill-item"><i class="fa fa-handshake-o"></i> Stakeholder Alignment</div>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-title grad-text"><i class="fa fa-shield"></i> Agile &amp; Governance</div>
+          <div class="skill-list">
+            <div class="skill-item"><i class="fa fa-refresh"></i> SAFe &amp; Scrum</div>
+            <div class="skill-item"><i class="fa fa-calendar"></i> Sprint Planning</div>
+            <div class="skill-item"><i class="fa fa-bar-chart"></i> Executive Scorecards</div>
+            <div class="skill-item"><i class="fa fa-dashboard"></i> KPI Dashboards</div>
+            <div class="skill-item"><i class="fa fa-warning"></i> Predictive Risk Analysis</div>
+            <div class="skill-item"><i class="fa fa-check-square-o"></i> SDLC &amp; Data-Driven Governance</div>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-title grad-text"><i class="fa fa-magic"></i> AI, Data &amp; Tools</div>
+          <div class="skill-list">
+            <div class="skill-item"><i class="fa fa-comments"></i> LLM-Assisted Delivery</div>
+            <div class="skill-item"><i class="fa fa-pencil"></i> Prompt Engineering</div>
+            <div class="skill-item"><i class="fa fa-cogs"></i> n8n Automation</div>
+            <div class="skill-item"><i class="fa fa-database"></i> RAG / Vector DB</div>
+            <div class="skill-item"><i class="fa fa-bar-chart"></i> Power BI</div>
+            <div class="skill-item"><i class="fa fa-wrench"></i> Jira / Confluence / MS Project</div>
+          </div>
         </div>
       </div>
-      <div class="skillcard">
-        <h4>AI, Data &amp; Tools</h4>
-        <div class="chips">
-          <span class="chip">LLM-Assisted Delivery</span>
-          <span class="chip">Prompt Engineering</span>
-          <span class="chip">n8n Automation</span>
-          <span class="chip">RAG / Vector DB</span>
-          <span class="chip">Power BI</span>
-          <span class="chip">JIRA</span>
-          <span class="chip">Confluence</span>
-          <span class="chip">MS Project</span>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="section-header">
+        <div class="section-icon"><i class="fa fa-briefcase"></i></div>
+        <span class="section-title grad-text">Professional Experience</span>
+      </div>
+      <div class="timeline">
+
+        <div class="tl-item"><div class="tl-left"><div class="tl-dot"></div><div class="tl-line"></div></div><div class="tl-body">
+          <div class="tl-company">StatusNeo</div>
+          <div class="tl-role grad-text">Program Manager &amp; Delivery Leader</div>
+          <div class="tl-meta"><span><i class="fa fa-calendar"></i> May 2024 — May 2026</span><span><i class="fa fa-map-marker"></i> Bangalore, India</span></div>
+          <ul class="tl-bullets">
+            <li>Orchestrated delivery across 4 product lines and 30+ distributed engineering, product and design teams, lifting launch readiness from 70% to 90%.</li>
+            <li>Cut production delays ~25% by resolving cross-team dependencies and introducing predictive release-risk modelling.</li>
+            <li>Reduced critical leadership escalations ~30% through centralized KPI dashboards and executive scorecards.</li>
+            <li>Deployed LLM tools (ChatGPT/Copilot) and n8n automation to eliminate manual documentation effort and surface early-warning delivery risks.</li>
+          </ul>
+        </div></div>
+
+        <div class="tl-item"><div class="tl-left"><div class="tl-dot"></div><div class="tl-line"></div></div><div class="tl-body">
+          <div class="tl-company">NEWTRUN Labs</div>
+          <div class="tl-role grad-text">Founder</div>
+          <div class="tl-meta"><span><i class="fa fa-calendar"></i> Sep 2022 — Dec 2023</span></div>
+          <ul class="tl-bullets">
+            <li>Launched two proprietary technology platforms from concept to MVP in 6 months, owning product strategy, customer discovery and engineering milestones.</li>
+            <li>Compressed engineering rework ~35% by tightening sprint execution and roadmap discipline.</li>
+          </ul>
+        </div></div>
+
+        <div class="tl-item"><div class="tl-left"><div class="tl-dot"></div><div class="tl-line"></div></div><div class="tl-body">
+          <div class="tl-company">Mirra Healthcare</div>
+          <div class="tl-role grad-text">Product Owner / Project Manager</div>
+          <div class="tl-meta"><span><i class="fa fa-calendar"></i> Apr 2021 — Sep 2022</span></div>
+          <ul class="tl-bullets">
+            <li>Drove backlog prioritization, release planning and roadmap execution, boosting delivery efficiency ~45%.</li>
+            <li>Led 2 Agile teams (20+ members), lifting sprint predictability ~30% and reducing spillover work.</li>
+          </ul>
+        </div></div>
+
+        <div class="tl-item"><div class="tl-left"><div class="tl-dot"></div><div class="tl-line"></div></div><div class="tl-body">
+          <div class="tl-company">BluOne India</div>
+          <div class="tl-role grad-text">Project Manager</div>
+          <div class="tl-meta"><span><i class="fa fa-calendar"></i> Aug 2020 — Mar 2021</span></div>
+          <ul class="tl-bullets"><li>Delivered 4 concurrent enterprise programs, lifting launch-milestone adherence through metrics-driven governance. (Department acquired by Mirra Healthcare.)</li></ul>
+        </div></div>
+
+        <div class="tl-item"><div class="tl-left"><div class="tl-dot"></div><div class="tl-line"></div></div><div class="tl-body">
+          <div class="tl-company">Philips</div>
+          <div class="tl-role grad-text">Software Technologist II (Scrum Master / PM)</div>
+          <div class="tl-meta"><span><i class="fa fa-calendar"></i> Apr 2017 — May 2020</span></div>
+          <ul class="tl-bullets"><li>Boosted sprint completion rates ~30% by clearing bottlenecks across global, multi-timezone Agile teams.</li></ul>
+        </div></div>
+
+        <div class="tl-item"><div class="tl-left"><div class="tl-dot"></div><div class="tl-line"></div></div><div class="tl-body">
+          <div class="tl-company">Swiggy</div>
+          <div class="tl-role grad-text">Software QA Lead</div>
+          <div class="tl-meta"><span><i class="fa fa-calendar"></i> Aug 2015 — Apr 2017</span><span><i class="fa fa-map-marker"></i> Bangalore, India</span></div>
+          <ul class="tl-bullets"><li>Built and scaled the enterprise QA function as a core engineering team member, safeguarding quality for high-traffic, mission-critical applications.</li></ul>
+        </div></div>
+
+        <div class="tl-item"><div class="tl-left"><div class="tl-dot"></div><div class="tl-line"></div></div><div class="tl-body">
+          <div class="tl-company">Crestech Software</div>
+          <div class="tl-role grad-text">Associate QA Lead / Senior QA</div>
+          <div class="tl-meta"><span><i class="fa fa-calendar"></i> Nov 2010 — Aug 2015</span></div>
+          <ul class="tl-bullets"><li>Managed enterprise QA teams across high-scale applications, implementing risk-based testing frameworks that reduced critical production defects and leakage.</li></ul>
+        </div></div>
+
+        <div class="tl-item"><div class="tl-left"><div class="tl-dot"></div></div><div class="tl-body">
+          <div class="tl-company">IYCWorld Soft Infrastructure</div>
+          <div class="tl-role grad-text">IT Consultant</div>
+          <div class="tl-meta"><span><i class="fa fa-calendar"></i> Apr 2008 — May 2010</span></div>
+          <ul class="tl-bullets"><li>Began career in hands-on technical delivery — systems implementation, application deployments and scripting/customizations, driving smooth end-user adoption.</li></ul>
+        </div></div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="section-header">
+        <div class="section-icon"><i class="fa fa-lightbulb-o"></i></div>
+        <span class="section-title grad-text">Personal Projects</span>
+      </div>
+      <div class="two-col">
+        <div class="info-card">
+          <div class="info-card-title">SkinMitra — AI Skincare Platform</div>
+          <div class="info-card-sub grad-text">Product Concept &amp; Delivery · 2026</div>
+          <div class="info-card-body">An AI-powered skincare platform that builds personalized routines based on an individual's actual skin health needs. The concept positions AI as a trusted advisor, balancing data-driven precision with an empathetic approach to skincare.</div>
+        </div>
+        <div class="info-card">
+          <div class="info-card-title">Kathakriti — AI Content Creation &amp; Personalisation</div>
+          <div class="info-card-sub grad-text">Product Concept · 2026</div>
+          <div class="info-card-body">An AI storytelling concept that turns public-domain stories into personalized, AI-animated adaptations tailored to a child's exact age and tone, generated on demand and streamed rather than downloaded.</div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- EXPERIENCE -->
-<section id="experience">
-  <div class="wrap">
-    <h2>Professional Experience</h2>
-    <div class="jobgrid">
-    <div class="job">
-      <div class="top">
-        <h3>Program Manager &amp; Delivery Leader</h3>
-        <span class="when">May 2024 — May 2026 · Bangalore</span>
+    <section class="section" id="education">
+      <div class="section-header">
+        <div class="section-icon"><i class="fa fa-graduation-cap"></i></div>
+        <span class="section-title grad-text">Education &amp; Certifications</span>
       </div>
-      <span class="co">StatusNeo</span>
-      <ul>
-        <li>Orchestrated delivery across 4 product lines and 30+ distributed engineering, product, and design teams, lifting launch readiness from 70% to 90%.</li>
-        <li>Cut production delays ~25% by resolving cross-team dependencies and introducing predictive release-risk modelling.</li>
-        <li>Reduced critical leadership escalations ~30% through centralized KPI dashboards and executive scorecards.</li>
-        <li>Deployed LLM tools (ChatGPT/Copilot) and n8n automation to eliminate manual documentation effort and surface early-warning delivery risks.</li>
-      </ul>
-    </div>
+      <div class="two-col">
+        <div class="info-card">
+          <div class="info-card-title">IIM Ahmedabad</div>
+          <div class="info-card-sub grad-text">Accelerated General Management Programme (AGMP)</div>
+          <div class="info-card-meta">2019 — 2020</div>
+        </div>
+        <div class="info-card">
+          <div class="info-card-title">UPTU, Lucknow</div>
+          <div class="info-card-sub grad-text">B.Tech, Computer Science</div>
+          <div class="info-card-meta">2003 — 2007</div>
+        </div>
+        <div class="info-card">
+          <div class="info-card-title">Scaled Agile, Inc.</div>
+          <div class="info-card-sub grad-text">SAFe® Advanced Scrum Master (SASM)</div>
+          <div class="info-card-meta">2019</div>
+        </div>
+        <div class="info-card">
+          <div class="info-card-title">PMI</div>
+          <div class="info-card-sub grad-text">PMP (Pursuing)</div>
+          <div class="info-card-meta">2026</div>
+        </div>
+        <div class="info-card">
+          <div class="info-card-title">Be10X</div>
+          <div class="info-card-sub grad-text">AI Accelerator</div>
+          <div class="info-card-meta">2026</div>
+        </div>
+        <div class="info-card">
+          <div class="info-card-title">DeepLearning.Coursera</div>
+          <div class="info-card-sub grad-text">AI for Everyone</div>
+          <div class="info-card-meta">2026</div>
+        </div>
+      </div>
+    </section>
 
-    <div class="job">
-      <div class="top">
-        <h3>Founder</h3>
-        <span class="when">Sep 2022 — Dec 2023</span>
+    <section class="section" id="more">
+      <div class="section-header">
+        <div class="section-icon"><i class="fa fa-compass"></i></div>
+        <span class="section-title grad-text">Philosophy &amp; Interests</span>
       </div>
-      <span class="co">NEWTRUN Labs</span>
-      <ul>
-        <li>Launched two proprietary technology platforms from concept to MVP in 6 months, owning product strategy, customer discovery, and engineering milestones.</li>
-        <li>Compressed engineering rework ~35% by tightening sprint execution and roadmap discipline.</li>
-      </ul>
-    </div>
+      <div class="more-grid">
+        <div class="more-card">
+          <div class="more-card-title grad-text"><i class="fa fa-rocket"></i> Delivery Philosophy</div>
+          <ul class="more-list">
+            <li>Ship outcomes, not activity</li>
+            <li>Predictability is a feature — govern with data, not gut</li>
+            <li>Automate the toil so people focus on judgment</li>
+            <li>Lead with clarity, especially in ambiguity</li>
+          </ul>
+        </div>
+        <div class="more-card">
+          <div class="more-card-title grad-text"><i class="fa fa-language"></i> Languages &amp; Interests</div>
+          <ul class="more-list">
+            <li>English — Professional Working</li>
+            <li>Hindi — Native / Bilingual</li>
+            <li>Interests — Music, Reading, Mentoring</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-    <div class="job">
-      <div class="top">
-        <h3>Product Owner / Project Manager</h3>
-        <span class="when">Apr 2021 — Sep 2022</span>
+    <section class="section" id="contact">
+      <div class="section-header">
+        <div class="section-icon"><i class="fa fa-envelope"></i></div>
+        <span class="section-title grad-text">Contact</span>
       </div>
-      <span class="co">Mirra Healthcare</span>
-      <ul>
-        <li>Drove backlog prioritization, release planning, and roadmap execution, boosting delivery efficiency ~45%.</li>
-        <li>Led 2 Agile teams (20+ members), lifting sprint predictability ~30% and reducing spillover work.</li>
-      </ul>
-    </div>
+      <div class="contact-grid">
+        <div class="contact-copy">
+          <p class="about-lead">Open to senior Program / Delivery Management roles.</p>
+          <p class="about-body" style="margin-top:0.75rem;">Bangalore, India · Immediate / short notice</p>
+          <div style="margin-top:1.5rem;">
+            <a href="mailto:bajpayee.neha@gmail.com" class="sidebar-cta" style="display:inline-flex; width:auto; padding:0.7rem 1rem;"><i class="fa fa-envelope"></i> Email Me</a>
+          </div>
+        </div>
+        <div class="ci-wrap">
+          <div class="ci-item"><div class="ci-icon"><i class="fa fa-map-marker"></i></div><div><div class="ci-label">Location</div><div class="ci-value">Bangalore, India</div></div></div>
+          <div class="ci-item"><div class="ci-icon"><i class="fa fa-envelope"></i></div><div><div class="ci-label">Email</div><div class="ci-value"><a href="mailto:bajpayee.neha@gmail.com">bajpayee.neha@gmail.com</a></div></div></div>
+          <div class="ci-item"><div class="ci-icon"><i class="fa fa-linkedin"></i></div><div><div class="ci-label">LinkedIn</div><div class="ci-value"><a href="https://www.linkedin.com/in/neha-bajpayee-1a976a5a/" target="_blank" rel="noopener noreferrer">linkedin.com/in/neha-bajpayee-1a976a5a</a></div></div></div>
+        </div>
+      </div>
+    </section>
 
-    <div class="job">
-      <div class="top">
-        <h3>Project Manager</h3>
-        <span class="when">Aug 2020 — Mar 2021</span>
+    <footer class="site-footer">
+      <div class="footer-copy">&copy; 2026 Neha Bajpayee. All rights reserved.</div>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/in/neha-bajpayee-1a976a5a/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
       </div>
-      <span class="co">BluOne India</span>
-      <ul>
-        <li>Delivered 4 concurrent enterprise programs, lifting launch-milestone adherence through metrics-driven governance. (Department acquired by Mirra Healthcare.)</li>
-      </ul>
-    </div>
+    </footer>
+  </main>
 
-    <div class="job">
-      <div class="top">
-        <h3>Software Technologist II (Scrum Master / PM)</h3>
-        <span class="when">Apr 2017 — May 2020</span>
-      </div>
-      <span class="co">Philips</span>
-      <ul>
-        <li>Boosted sprint completion rates ~30% by clearing bottlenecks across global, multi-timezone Agile teams.</li>
-      </ul>
-    </div>
-
-    <div class="job">
-      <div class="top">
-        <h3>Software QA Lead</h3>
-        <span class="when">Aug 2015 — Apr 2017 · Bangalore</span>
-      </div>
-      <span class="co">Swiggy</span>
-      <ul>
-        <li>Built and scaled the enterprise QA function as a core engineering team member, safeguarding quality for high-traffic, mission-critical applications.</li>
-      </ul>
-    </div>
-
-    <div class="job">
-      <div class="top">
-        <h3>Associate QA Lead / Senior QA</h3>
-        <span class="when">Nov 2010 — Aug 2015</span>
-      </div>
-      <span class="co">Crestech Software</span>
-      <ul>
-        <li>Managed enterprise QA teams across high-scale applications, implementing risk-based testing frameworks that reduced critical production defects and leakage.</li>
-      </ul>
-    </div>
-
-    <div class="job">
-      <div class="top">
-        <h3>IT Consultant</h3>
-        <span class="when">Apr 2008 — May 2010</span>
-      </div>
-      <span class="co">IYCWorld Soft Infrastructure</span>
-      <ul>
-        <li>Began career in hands-on technical delivery — systems implementation, application deployments, and scripting/customizations — driving smooth end-user adoption.</li>
-      </ul>
-    </div>
-  </div>
-  </div>
-</section>
-
-  <!-- PROJECTS -->
-<section id="projects">
-  <div class="wrap">
-    <h2>Personal Projects</h2>
-    <div class="two">
-      <div class="card">
-        <h4>SkinMitra — AI Skincare Platform</h4>
-        <div class="meta">Product Concept &amp; Delivery · 2026</div>
-        <p class="muted">SkinMitra is an AI-powered skincare platform that builds personalized routines based on an individual's actual skin health needs — not just aesthetic trends. The AI acts less like a product engine and more like a trusted advisor, balancing data-driven precision with an empathetic approach to skincare. By focusing on genuine skin health outcomes, it aims to make expert-level personalization accessible to everyone, regardless of budget or access to dermatologists.</p>
-      </div>
-      <div class="card">
-        <h4>Kathakriti — AI Content creation & personalisation</h4>
-        <div class="meta">Product Concept · 2026</div>
-        <p class="muted">Kathakriti turns beloved public-domain stories into personalized, AI-animated adaptations — tailored to a child's exact age and tone, generated on demand rather than pulled from a fixed library. Every story is streamed, never downloaded, and creators who fund a title's first generation earn ongoing credit as it's watched and loved by others. It's storytelling reimagined at the intersection of classic literature and generative AI — timeless narratives, made new for every child.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- EDUCATION -->
-<section id="education">
-  <div class="wrap">
-    <h2>Education &amp; Certifications</h2>
-    <div class="three">
-      <div class="card">
-        <h4>Accelerated General Management Programme (AGMP)</h4>
-        <div class="meta">IIM Ahmedabad · 2019 – 2020</div>
-      </div>
-      <div class="card">
-        <h4>B.Tech, Computer Science</h4>
-        <div class="meta">UPTU, Lucknow · 2003 – 2007</div>
-      </div>
-      <div class="card">
-        <h4>SAFe® Advanced Scrum Master (SASM)</h4>
-        <div class="meta">Scaled Agile, Inc. · 2019</div>
-      </div>
-      <div class="card">
-        <h4>PMP (Pursuing)</h4>
-        <div class="meta">PMI · 2026</div>
-      </div>
-        <div class="card">
-        <h4>AI Accelerator — Be10X</h4>
-        <div class="meta">Be10X · 2026</div>
-      </div>
-        <div class="card">
-        <h4>AI for Everyone</h4>
-        <div class="meta">DeepLearning.Coursera · 2026</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- PHILOSOPHY -->
-<section id="philosophy">
-  <div class="wrap">
-    <h2>Philosophy &amp; Interests</h2>
-    <div class="phil">
-      <div>
-        <h3 style="margin-bottom:12px; font-size:16px">Delivery Philosophy</h3>
-        <ul>
-          <li>Ship outcomes, not activity</li>
-          <li>Predictability is a feature — govern with data, not gut</li>
-          <li>Automate the toil so people focus on judgment</li>
-          <li>Lead with clarity, especially in ambiguity</li>
-        </ul>
-      </div>
-      <div>
-        <h3 style="margin-bottom:12px; font-size:16px">Languages &amp; Interests</h3>
-        <ul>
-          <li>English — Professional Working</li>
-          <li>Hindi — Native / Bilingual</li>
-          <li>Interests — Music, Reading, Mentoring</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" style="border-bottom:none">
-  <div class="wrap center">
-    <h2>Contact</h2>
-    <p style="margin-bottom:8px">Open to senior Program / Delivery Management roles.</p>
-    <p class="muted" style="margin-bottom:22px">Bangalore, India · Immediate / short notice</p>
-    <div class="cta" style="justify-content:center">
-      <a class="btn primary" href="mailto:bajpayee.neha@gmail.com">Email Me</a>
-      <a class="btn ghost" href="https://www.linkedin.com/in/neha-bajpayee-1a976a5a/" target="_blank" rel="noopener">LinkedIn</a>
-    </div>
-  </div>
-</section>
-
-<footer>
-  © 2026 Neha Bajpayee · Technical Program &amp; Delivery Manager · Bangalore, India
-</footer>
-
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script>
+    $('a[href^="#"]').on('click', function(e) {
+      var t = $(this).attr('href');
+      if ($(t).length) { e.preventDefault(); $('html,body').animate({ scrollTop: $(t).offset().top - 20 }, 500); }
+    });
+    $(window).on('scroll', function() {
+      var links = $('.sidebar-nav a');
+      var atBottom = $(window).scrollTop() + $(window).height() >= $(document).height() - 5;
+      if (atBottom) { links.removeClass('active'); links.last().addClass('active'); return; }
+      var pos = $(document).scrollTop() + 100, current = null;
+      links.each(function() {
+        var t = $(this).attr('href');
+        if ($(t).length && $(t).offset().top <= pos) current = $(this);
+      });
+      links.removeClass('active'); if (current) current.addClass('active');
+    });
+  </script>
 </body>
 </html>
