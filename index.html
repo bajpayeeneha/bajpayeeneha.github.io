@@ -24,7 +24,7 @@
   a{color:var(--accent2); text-decoration:none}
   a:hover{text-decoration:underline}
   .wrap{max-width:1080px; margin:0 auto; padding:0 24px}
-  section{padding:64px 0; border-bottom:1px solid var(--line)}
+  section{padding:52px 0; border-bottom:1px solid var(--line)}
   h2{font-size:14px; letter-spacing:2px; text-transform:uppercase; color:var(--accent);
      margin-bottom:28px; font-weight:700}
   h3{font-size:19px; margin-bottom:4px}
@@ -89,9 +89,19 @@
   .job .when{color:var(--muted); font-size:14px}
   .job ul{margin:14px 0 0 18px; color:var(--muted)}
   .job ul li{margin-bottom:8px}
+  .jobgrid
+  {
+    display:grid; grid-template-columns:1fr 1fr; gap:18px}
+    .jobgrid .job{margin-bottom:0}   @media(max-width:760px)
+      {
+        .jobgrid{grid-template-columns:1fr
+      }
+  }
 
   /* EDU / ACHV */
-  .two{display:grid; grid-template-columns:1fr 1fr; gap:18px}
+  .two{display:grid; grid-template-columns:1fr 1fr; gap:18px}   
+  .three{display:grid; grid-template-columns:repeat(3,1fr); gap:18px}   
+  @media(max-width:760px){.three{grid-template-columns:1fr}}
   @media(max-width:760px){.two{grid-template-columns:1fr}}
   .card{background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:22px}
   .card h4{font-size:16px; margin-bottom:4px}
@@ -213,7 +223,7 @@
 <section id="experience">
   <div class="wrap">
     <h2>Professional Experience</h2>
-
+    <div class="jobgrid">
     <div class="job">
       <div class="top">
         <h3>Program Manager &amp; Delivery Leader</h3>
@@ -307,6 +317,7 @@
       </ul>
     </div>
   </div>
+  </div>
 </section>
 
   <!-- PROJECTS -->
@@ -332,7 +343,7 @@
 <section id="education">
   <div class="wrap">
     <h2>Education &amp; Certifications</h2>
-    <div class="two">
+    <div class="three">
       <div class="card">
         <h4>Accelerated General Management Programme (AGMP)</h4>
         <div class="meta">IIM Ahmedabad · 2019 – 2020</div>
